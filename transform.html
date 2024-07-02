@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        body{
+            margin-top: 100px;
+            margin-left: 400px;
+        }
+        .container{
+            background-color: aquamarine;
+            border: 2px solid steelblue;
+            margin-bottom: 50px;
+            width: 200px;
+        }
+        .inner{
+            border: 1px solid steelblue;
+            height: 200px;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+        .one .inner{
+            transform: rotate(45deg) scale(0.5 );
+        }
+        .two .inner{
+            transform: scale(0.68) translateX(43px) translateY(-90px);
+        }
+        .three .inner{
+            transform:skew(34deg) scale(0.87);
+        }
+    </style>
+</head>
+<body>
+    <div class="container one">
+        <div class="inner">Inner 1</div>
+        <div class="inner">Inner 2</div>
+        <div class="inner">Inner 3</div>
+    </div>
+    <div class="container two">
+        <div class="inner">Inner 1</div>
+        <div class="inner">Inner 2</div>
+        <div class="inner">Inner 3</div>
+    </div>
+    <div class="container three">
+        <div class="inner">Inner 1</div>
+        <div class="inner">Inner 2</div>
+        <div class="inner">Inner 3</div>
+    </div>
+</body>
+</html>
