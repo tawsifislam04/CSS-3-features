@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        body{
+            margin-bottom: 200px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 2px solid steelblue;
+            background-color: palegoldenrod;
+            margin-bottom: 20px;
+            text-align: center;
+            transition: transform 1s linear,   background-color 1s linear;
+        }
+        .box:hover{
+            transform: rotate(745deg) translateX(200px) scale(1.75);
+            background-color: red;
+        }
+        .stick{
+            height: 350px;
+            width: 20px;
+            background-color: peru;
+            overflow-wrap: break-word;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 660px;
+            margin-top: -180px;
+            transition: all 15s;
+        }
+        .stick:hover{
+            transform: rotate(90000deg);
+            cursor: pointer ;
+        }
+    </style>
+</head>
+<body>
+    <h3>Exploring CSS3 Transition</h3>
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+    <div class="box">Box 4</div>
+    <div class="stick">S<br>t<br>i<br>c<br>k</div>
+</body>
+</html>
