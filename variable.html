@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Custom Property</title>
+    <style>
+        :root{
+            --primary-color:rgb(33, 145, 236);
+            --secondary-color:aquamarine;
+            --font-size:20px;
+        }
+        h1{
+            color: var(--primary-color);
+        }
+        h5{
+            color: var(--primary-color);
+            background-color: var(--secondary-color);
+            font-size: var(--font-size);
+        }
+        .box{
+            background-color: var(--secondary-color);
+            border: 2px solid var(--primary-color);
+            width: calc(100% - 300px);
+            padding:calc(100% - 1340px);
+            margin-bottom: 100px;
+        }
+        .box p{
+            color: var(--primary-color);
+            font-size: var(--font-size);
+        }
+        .container{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 200px calc(100% - 200px - 20px);
+            grid-template-rows: 500px;
+        }
+        .sidebar{
+            background-color: var(--primary-color);
+            width: 200px;
+        }
+        .main{
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Custom Property</h1>
+    <h5>Also known as CSS variable</h5>
+    <div class="box">
+        <h3>My Box</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur atque unde necessitatibus qui. Nobis esse minus officia accusantium. Possimus nihil, doloribus fuga architecto quidem mollitia velit voluptate laborum aliquam quo.</p>
+    </div>
+    <div class="container">
+        <div class="sidebar">Sidebar</div>
+        <div class="main">Main Content</div>
+    </div>
+</body>
+</html>
